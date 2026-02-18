@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature - Jared Cambridge Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3><a href="index.html">Jared Cambridge Photography</a></h3>    
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="people.html">People</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="street.html">Street</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="gallery-container">
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-01.jpg')">
+                <img src="images/nature/thumbs/nature-01-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-02.jpg')">
+                <img src="images/nature/thumbs/nature-02-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-03.jpg')">
+                <img src="images/nature/thumbs/nature-03-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-04.jpg')">
+                <img src="images/nature/thumbs/nature-04-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-05.jpg')">
+                <img src="images/nature/thumbs/nature-05-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-06.jpg')">
+                <img src="images/nature/thumbs/nature-06-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-07.jpg')">
+                <img src="images/nature/thumbs/nature-07-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-08.jpg')">
+                <img src="images/nature/thumbs/nature-08-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-09.jpg')">
+                <img src="images/nature/thumbs/nature-09-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-10.jpg')">
+                <img src="images/nature/thumbs/nature-10-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-11.jpg')">
+                <img src="images/nature/thumbs/nature-11-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-12.jpg')">
+                <img src="images/nature/thumbs/nature-12-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-13.jpg')">
+                <img src="images/nature/thumbs/nature-13-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-14.jpg')">
+                <img src="images/nature/thumbs/nature-14-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-15.jpg')">
+                <img src="images/nature/thumbs/nature-15-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/nature/nature-16.jpg')">
+                <img src="images/nature/thumbs/nature-16-thumb.jpg" alt="...">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Jared Cambridge 2026</p>
+    </footer>
+
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Lightbox image">
+        <div class="lightbox-nav">
+            <button class="lightbox-prev" onclick="changeLightboxImage(-1)">&#10094;</button>
+            <button class="lightbox-next" onclick="changeLightboxImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="lightbox.js"></script>
+
+</body>
+</html>

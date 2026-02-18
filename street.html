@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street - Jared Cambridge Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3><a href="index.html">Jared Cambridge Photography</a></h3>    
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="people.html">People</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="street.html">Street</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="gallery-container">
+
+            <div class="gallery-item" onclick="openLightbox('images/street/street-01.jpg')">
+                <img src="images/street/thumbs/street-01-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/street/street-02.jpg')">
+                <img src="images/street/thumbs/street-02-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/street/street-03.jpg')">
+                <img src="images/street/thumbs/street-03-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/street/street-04.jpg')">
+                <img src="images/street/thumbs/street-04-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/street/street-05.jpg')">
+                <img src="images/street/thumbs/street-05-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/street/street-06.jpg')">
+                <img src="images/street/thumbs/street-06-thumb.jpg" alt="...">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Jared Cambridge 2026</p>
+    </footer>
+
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Lightbox image">
+        <div class="lightbox-nav">
+            <button class="lightbox-prev" onclick="changeLightboxImage(-1)">&#10094;</button>
+            <button class="lightbox-next" onclick="changeLightboxImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="lightbox.js"></script>
+
+</body>
+</html>

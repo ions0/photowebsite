@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People - Jared Cambridge Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3><a href="index.html">Jared Cambridge Photography</a></h3>    
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="people.html">People</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="street.html">Street</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="gallery-container">
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-01.jpg')">
+                <img src="images/people/thumbs/people-01-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-03.jpg')">
+                <img src="images/people/thumbs/people-03-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-04.jpg')">
+                <img src="images/people/thumbs/people-04-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-05.jpg')">
+                <img src="images/people/thumbs/people-05-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-07.jpg')">
+                <img src="images/people/thumbs/people-07-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-08.jpg')">
+                <img src="images/people/thumbs/people-08-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-10.jpg')">
+                <img src="images/people/thumbs/people-10-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-11.jpg')">
+                <img src="images/people/thumbs/people-11-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-12.jpg')">
+                <img src="images/people/thumbs/people-12-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-13.jpg')">
+                <img src="images/people/thumbs/people-13-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-14.jpg')">
+                <img src="images/people/thumbs/people-14-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-15.jpg')">
+                <img src="images/people/thumbs/people-15-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-16.jpg')">
+                <img src="images/people/thumbs/people-16-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-17.jpg')">
+                <img src="images/people/thumbs/people-17-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-18.jpg')">
+                <img src="images/people/thumbs/people-18-thumb.jpg" alt="...">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('images/people/people-20.jpg')">
+                <img src="images/people/thumbs/people-20-thumb.jpg" alt="...">
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Jared Cambridge 2026</p>
+    </footer>
+
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Lightbox image">
+        <div class="lightbox-nav">
+            <button class="lightbox-prev" onclick="changeLightboxImage(-1)">&#10094;</button>
+            <button class="lightbox-next" onclick="changeLightboxImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="lightbox.js"></script>
+
+</body>
+</html>
