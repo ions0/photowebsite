@@ -30,7 +30,6 @@
     <main>
         <section class="contact-section">
             <h1 class="contact-title">Get in touch</h1>
-            <p class="contact-intro">Questions, bookings or just want to say hello? Send a message below.</p>
 
             <form id="contact-form" class="contact-form" action="https://formspree.io/f/xdealvpb" method="POST" novalidate>
 
@@ -86,7 +85,7 @@
                 status.textContent = '';
 
                 if (document.getElementById('website').value !== '') {
-                    showStatus('Thanks! Your message has been sent.', false);
+                    showStatus('Your message has been sent, have a great day.', false);
                     form.reset();
                     return;
                 }
