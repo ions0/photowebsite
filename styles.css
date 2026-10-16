@@ -30,7 +30,8 @@ header h3 {
     color: #dedede;
 }
 
-/* Navigation */
+/* =============== Navigation ==================== */
+
 nav {
     padding: 2rem 0;
     background-color: rgba(10, 10, 10, 0.95);
@@ -60,7 +61,7 @@ nav a {
     text-transform: uppercase;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block; /* Move here - on the link itself */
+    display: inline-block;
 }
 
 nav a::after {
@@ -93,7 +94,8 @@ a {
     color: #dedede;
 }
 
-/* Main Content */
+/* =============== Main Content ==================== */
+
 main {
     flex: 1;
     display: flex;
@@ -162,7 +164,8 @@ main {
     transform: translateY(0);
 }
 
-/* Gallery Grid - All Square */
+/* =============== Gallery ==================== */
+
 .gallery-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -224,7 +227,8 @@ main {
 .gallery-item:nth-child(17) { animation-delay: 0.9s; }
 .gallery-item:nth-child(18) { animation-delay: 0.95s; }
 
-/* Footer */
+/* =============== Footer ==================== */
+
 footer {
     padding: 2rem;
     text-align: center;
@@ -239,7 +243,8 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* Lightbox */
+/* =============== Lightbox ==================== */
+
 .lightbox {
     display: none;
     position: fixed;
@@ -557,7 +562,7 @@ nav a[aria-current="page"] {
     }
 }
 
-/* Smartphone optimization */
+/* =============== Smartphone optimization ==================== */
 
 @media (max-width: 480px) {
     header {
